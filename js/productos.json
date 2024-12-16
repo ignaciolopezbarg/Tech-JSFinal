@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "brand": "Benelli",
+      "img": "./img/img-bicis/benello-mtb.jpg",
+      "description": "Bicicleta de montaña, freno a disco, cuadro de aleación Cromoly, diversos colores disponibles",
+      "precio": 12500,
+      "stock": 5
+    },
+    {
+      "id": 2,
+      "brand": "Caloi",
+      "img": "./img/img-bicis/caloi-mtb.jpg",
+      "description": "Bicicleta de montaña, freno a disco, cuadro de aluminio, cubiertas doble pared",
+      "precio": 23500,
+      "stock": 15
+    },
+    {
+      "id": 3,
+      "brand": "Fuyi",
+      "img": "./img/img-bicis/fuyi-mtb.jpg",
+      "description": "Bicicleta de montaña, freno a disco, cuadro de aluminio, cubiertas doble pared",
+      "precio": 15500,
+      "stock": 2
+    },
+    {
+      "id": 4,
+      "brand": "Ghost",
+      "img": "./img/img-bicis/mtb-doblesusp.jpg",
+      "description": "Bicicleta de montaña, freno a disco, cuadro de carbono, cubiertas doble pared, doble suspensión, especial descenso",
+      "precio": 17500,
+      "stock": 4
+    },
+    {
+      "id": 5,
+      "brand": "Philco",
+      "img": "./img/img-bicis/mtb-electrica.jpg",
+      "description": "Bicicleta eléctrica ", 
+      "precio": 19500,
+      "stock": 2
+    },
+    {
+      "id": 6,
+      "brand": "OIP",
+      "img": "./img/img-bicis/oip-electrica.jpeg",
+      "description": "Bicicleta eléctrica, freno a disco, cuadro de carbono, cubiertas doble pared, segunda bateria de respuesto incluida",
+      "precio": 12500,
+      "stock": 2
+    },
+    {
+      "id": 7,
+      "brand": "Orbea",
+      "img": "./img/img-bicis/orbea-ruta.jpg",
+      "description": "Bicicleta de ruta, freno a disco, cuadro de aluminio, cubiertas doble pared",
+      "precio": 23500,
+      "stock": 7
+    },
+    {
+      "id": 8,
+      "brand": "Trek",
+      "img": "./img/img-bicis/trek-ruta.jpg",
+      "description": "Bicicleta de ruta, freno a disco, cuadro de aluminio, cubiertas doble pared",
+      "precio": 33500,
+      "stock": 9
+    },
+    {
+      "id": 9,
+      "brand": "Trek",
+      "img": "./img/img-bicis/trek-ruta1.jpg",
+      "description": "Bicicleta de ruta, freno a disco, cuadro de aluminio, cubiertas doble pared",
+      "precio": 58500,
+      "stock": 2
+    }
+  ]
+  

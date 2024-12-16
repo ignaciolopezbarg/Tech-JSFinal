@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <section class="encabezado__logo"></section>
+
+      <a href="../index.html">
+        <section class="encabezado__nombre">
+          <p>TODOS EN BICICLETA</p>
+        </section>
+      </a>
+      <nav>
+        <ul>
+          <details>
+            <summary>Productos</summary>
+            <ul>
+              <li><a href="../index.html">Bicicletas</a></li>
+              <li><a href="">Cascos</a></li>
+              <li><a href="../index.html#cicloturismo">Cicloturismo</a></li>
+            </ul>
+          </details>
+          <a href="./ofertas.html"><li>Ofertas</li></a>
+          <a href="#"><li>Registro</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="registro">
+      <h1 class="registro__title">Formulario Registro de Clientes</h1>
+      <p class="registro__parrafo">
+        Para poder realizar cualquier compra, debes estar registrado en el
+        sitio!!
+      </p>
+      <form
+        action="mailto:ignaciolopezbarg@hotmail.com"
+        method="get"
+        enctype="multipart/form-data"
+      >
+        <fieldset>
+          <p>
+            <label for="first_name">Nombre:</label>
+            <input
+              type="text"
+              name="first_name"
+              required
+              minlength="3"
+              maxlength="18"
+              placeholder="ingrese su nombre"
+            />
+          </p>
+
+          <p>
+            <label for="last_name">Apellido:</label>
+            <input
+              type="text"
+              name="last_name"
+              required
+              minlength="3"
+              maxlength="18"
+              placeholder="ingrese su apellido"
+            />
+          </p>
+
+          <p>
+            <label for="gender">Genero:</label>
+            <input type="text" name="gender" placeholder="ingrese su genero" />
+          </p>
+
+          <p>
+            <label for="email">Correo electronico:</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="ingrese su email"
+              id="email"
+              required
+              pattern=" ^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$"
+            />
+          </p>
+          <p>
+            <label for="codPostal">Codigo Postal</label>
+            <input
+              type="text"
+              id="codPostal"
+              name="codPostal"
+              required
+              pattern="^[A-Z]{2}[0-9]{4}$"
+              placeholder="ingrese su codigo postal"
+            />
+          </p>
+          <p>
+            <label for="fechNac">Fecha de nacimiento</label>
+            <input type="date" name="fechNac" id="fechNac" />
+          </p>
+
+          <div class="button-container">
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpiar" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="pie">
+      <div class="pie__redes">
+        <a href="https://www.facebook.com"
+          ><img src="../img/img-bicis/facebook.webp " alt="imagen facebook"
+        /></a>
+        <a href="https://www.x.com"
+          ><img src="../img/img-bicis/x.png" alt="imagen red X"
+        /></a>
+        <a href="https://www.youtube.com/watch?v=-EtJlo1VLMU">
+          <img src="../img/img-bicis/youtube.png" alt="imagen logo youtube" />
+        </a>
+
+        <a href="mailto:ignaciolopezbarg@hotmail.com"
+          ><img src="../img/img-bicis/mail.png" alt="imagen mail"
+        /></a>
+
+        <a href="tel:+9900478999999">
+          <img src="../img/img-bicis/tel1.jpeg" alt="imagen telefono" />
+        </a>
+        <a href="../pages/faq.html"
+          ><img src="../img/img-bicis/faq.png " alt="enlace a faq"
+        /></a>
+        <a href="../pages/AboutUs.html"
+          ><img src="../img/img-bicis/aboutus.jpg" alt="imagen aboutus"
+        /></a>
+      </div>
+
+      <div class="pie__logo"></div>
+      <div class="pie__datos">
+        <a
+          href="https://www.google.com/maps?q=Calle+Peru+1978,+CABA"
+          target="_blank"
+          >Dirección: Calle Perú 1978 CABA</a
+        >
+        <p>Ir al sitio</p>
+      </div>
+    </footer>
+  </body>
+</html>

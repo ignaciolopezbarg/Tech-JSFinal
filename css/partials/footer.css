@@ -1,0 +1,101 @@
+.pie {
+  background-color: #d39e9e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 0.5em 1em;
+}
+
+.pie__redes {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+.pie__datos {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  flex-shrink: 1;
+  font-size: 1.6em;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pie__logo {
+  background-image: url(../../img/img-bicis/orbea-ruta.jpg);
+  width: 30%;
+  height: 50px;
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: left center;
+  flex-grow: 5;
+  flex-shrink: 1;
+}
+
+.pie__redes img,
+.pie__datos img {
+  max-width: 50px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+}
+
+@media (max-width: 1200px) {
+  .pie__redes img,
+  .pie__datos img {
+    width: 35px;
+  }
+
+  .pie__logo {
+    width: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pie {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pie__logo {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+
+  .pie__redes img,
+  .pie__datos img {
+    width: 40px;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .pie__datos {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .pie__redes img,
+  .pie__datos img {
+    width: 35px;
+  }
+
+  .pie__redes {
+    gap: 3px;
+  }
+
+  .pie__datos {
+    font-size: 1.3em;
+  }
+}

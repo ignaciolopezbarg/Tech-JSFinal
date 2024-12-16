@@ -1,0 +1,22 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+.cabecera {
+  display: flex;
+  justify-content: center;
+}
+
+.faq__summary {
+  display: block;
+  justify-content: start;
+  font-size: 1.8em;
+
+  border: 1px solid black;
+}
+.faq__respuesta {
+  font-size: 1.6em;
+  background-color: #eeeedd;
+}

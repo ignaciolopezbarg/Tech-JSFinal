@@ -1,0 +1,376 @@
+.container__titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 2.4em;
+  padding: 1em;
+}
+
+.container__info__parrafo {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid brown;
+  border-radius: 0.8em;
+  padding: 1rem;
+  font-family: Inter;
+  font-size: 1.8em;
+  font-weight: 500;
+  background-color: #f4f4f4;
+  margin: 1.5em 0.9em;
+}
+.container__info__parrafo + .container__info__parrafo {
+  margin-top: 1.1em;
+}
+
+#container__imagenes__card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#container__imagenes__card li {
+  list-style: none;
+  width: 290px;
+  border: 1px solid #ddd;
+  padding: 30px;
+  text-align: center;
+  background-color: #ffc2c2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#container__imagenes__card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.container__imagenes__card__description {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.container__imagenes__card__precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container__imagenes__card__stock {
+  font-size: 1.3rem;
+  color: #777;
+  margin: 8px 0;
+}
+.container__imagenes__card__brand {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container__imagenes__card__boton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.container__imagenes__card__boton:hover {
+  background-color: #0056b3;
+}
+#container__imagenes__card li:hover,
+#container__imagenes__card li:focus-within {
+  transform: scale(1.1);
+}
+
+.wapp {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 25px;
+  bottom: 180px;
+  z-index: 20;
+}
+
+.tel-button {
+  background-image: url("../../img/img-bicis/wapp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 80px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.wapp__llame {
+  color: blue;
+  align-content: center;
+}
+#cicloturismo {
+  padding: 1.5rem;
+}
+#cicloturismo__titulos h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#cicloturismo__titulos p,
+.cicloturismo__parrafo {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.container__titulo {
+  text-align: center;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 3.4rem;
+  padding: 1em;
+}
+
+.recorridos-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.recorridos {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(260px, 1fr)
+  ); /* Auto-ajustable */
+  width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.recorridos li {
+  list-style: none;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #f3e6e6;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recorridos li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.recorridos__boton {
+  border: 1px solid black;
+  width: 8rem;
+  height: 2.5rem;
+  margin: 10px auto 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.recorridos__precio {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+.recorridos__boton {
+  border: 1px solid black;
+  width: 10rem;
+  height: 2.2rem;
+}
+
+.recorridos__boton:hover {
+  background-color: #f28b8b;
+}
+
+@media (min-width: 1200px) {
+  .recorridos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 800px) {
+  .recorridos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .recorridos {
+    grid-template-columns: 1fr; /* Una tarjeta por fila */
+  }
+}
+.recorridos li:hover,
+.recorridos li:focus-within {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor principal del carrito */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para el encabezado del carrito */
+.container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Lista de productos en el carrito */
+.productsCart {
+  list-style-type: none;
+  padding: 0;
+}
+
+.productsCart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen de cada producto */
+.productsCart li img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contenido de cada producto */
+.productContent {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Título y descripción del producto */
+.productContent h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Precio y contador */
+.product-precio {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Botones de incrementar y decrementar cantidad */
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.counter button:hover {
+  background-color: #45a049;
+}
+
+/* Eliminar producto */
+.remove {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background-color: #c0392b;
+}
+
+/* Total del carrito */
+.carrito-total {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #333;
+}
+
+/* Mensaje si el carrito está vacío */
+.empty {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #e74c3c;
+  margin-top: 50px;
+}
+
+.encabezado__cart {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columna */
+  align-items: center; /* Centra los elementos en el eje horizontal */
+  justify-content: center; /* Centra los elementos en el eje vertical */
+}
+
+.material-icons {
+  font-size: 40px; /* Tamaño del ícono del carrito */
+  margin-bottom: 10px; /* Espacio entre el ícono y el contador */
+}
+
+.cart-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px; /* Ancho del círculo */
+  height: 30px; /* Altura del círculo */
+  border-radius: 50%; /* Hace que el contador sea circular */
+  background-color: rgb(247, 239, 239); /* Fondo rojo para el círculo */
+  color:black; /* Color del texto dentro del círculo */
+  font-size: 16px; /* Tamaño del número */
+  font-weight: bold; /* Opcional: hace el número más grueso */
+  position: relative;
+}
+
+#cartQuantity {
+  font-size: 14px; /* Ajusta el tamaño del número si es necesario */
+}
+.total-compra{
+  display: flex ;
+  font-size: 2rem;
+  font-weight: 800;
+  justify-content: center;
+  border: solid rgb(201, 97, 121) 2px;
+  margin: 0 90px;
+}

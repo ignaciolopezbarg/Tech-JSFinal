@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* max-width: 1200px; */
+}
+body{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  font-family: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}

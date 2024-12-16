@@ -1,0 +1,45 @@
+[
+    {
+      "destino": "San Antonio de Areco",
+      "descripcion": "Descubre el encanto de San Antonio de Areco, un pintoresco pueblo lleno de historia y tradiciones gauchas. Vive una experiencia única rodeado de naturaleza, cultura y arte local. Un destino perfecto para los amantes de la historia y el aire libre.",
+      "dificultad": "Media",
+      "costo_total": 5000,
+      "proximas_salidas": "1-12-2024"
+    },
+    {
+      "destino": "Chascomus",
+      "descripcion": "Chascomus te ofrece la tranquilidad de un hermoso lago y un entorno natural ideal para disfrutar de paseos relajados. Perfecto para quienes buscan desconectar y relajarse en un lugar lleno de serenidad y belleza.",
+      "dificultad": "Baja",
+      "costo_total": 7000,
+      "proximas_salidas": "8-12-2024"
+    },
+    {
+      "destino": "Miramar-Mar del Sud",
+      "descripcion": "Una aventura junto al mar te espera en Miramar y Mar del Sud. Disfruta de las playas de aguas claras y las actividades al aire libre en un entorno ideal para los más aventureros. Vive la emoción de la costa atlántica en su máxima expresión.",
+      "dificultad": "Alta",
+      "costo_total": 15000,
+      "proximas_salidas": "1-12-2024"
+    },
+    {
+      "destino": "Salar de Uyuni",
+      "descripcion": "Embárcate en una aventura única al Salar de Uyuni, uno de los paisajes más impresionantes del planeta. Este vasto desierto de sal te sorprenderá con sus paisajes surrealistas, ideales para quienes buscan una experiencia mística y fuera de lo común.",
+      "dificultad": "Alta",
+      "costo_total": 75000,
+      "proximas_salidas": "1-12-2025"
+    },
+    {
+      "destino": "Villa la Angostura",
+      "descripcion": "Villa la Angostura es un paraíso en la Patagonia, rodeado por lagos cristalinos y montañas majestuosas. Ideal para los amantes de la naturaleza y quienes buscan aventuras en un entorno único de belleza natural.",
+      "dificultad": "Media",
+      "costo_total": 65000,
+      "proximas_salidas": "1-11-2024"
+    },
+    {
+      "destino": "El Chalten",
+      "descripcion": "El Chalten, el corazón de la Patagonia, es el lugar perfecto para los apasionados del trekking y la aventura. Con sus imponentes montañas y paisajes de ensueño, ofrece una experiencia inolvidable para quienes buscan explorar lo desconocido.",
+      "dificultad": "Media",
+      "costo_total": 95000,
+      "proximas_salidas": "1-12-2025"
+    }
+  ]
+  
