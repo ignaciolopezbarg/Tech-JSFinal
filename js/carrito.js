@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
           const li = document.createElement("li");
           li.innerHTML = `
             <div class="productContent">
-              <h3 class="container__imagenes__card__brand">${producto.brand}</h3>
-              <p class="container__imagenes__card__description">${producto.description}</p>
-              <p class="container__imagenes__card__precio">$${producto.precio}</p>
-              <p class="container__imagenes__card__stock">Stock: ${producto.stock}</p>
+              <span class="carrito-container__brand">${producto.brand}</span>
+              <p class="carrito-container__description">${producto.description}</p>
+              <p class="carrito-container__precio">$${producto.precio}</p>
+
               <div class="counter">
                 <button id="decrementar-${producto.id}" class="button">-</button>
                 <span class="product-price">${producto.cantidad} u.</span>
@@ -32,7 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
   
           document
             .getElementById(`eliminar-${producto.id}`)
-            .addEventListener("click", () => eliminarProducto(producto.id));
+            .addEventListener("click", () =>{
+              eliminarProducto(producto.id);
+              Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Producto eliminado con exito",
+                showConfirmButton: false,
+                timer: 2500
+              });
+            } )
+           
+
           document
             .getElementById(`decrementar-${producto.id}`)
             .addEventListener("click", () => decrementarProducto(producto.id));
@@ -86,5 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   
     mostrarCarrito();
+  
   });
   

@@ -31,11 +31,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const boton = document.getElementById(`agregar-${producto.id}`);
         boton.addEventListener("click", () => {
           agregarAlCarrito(productos, producto.id);
+          // 
+          Swal.fire({
+            position: "top-end",
+            title: "Excelente eleccion, ve a la seccion del carrito !",
+            imageUrl: "./img/img-bicis/gruporutero.jpg",
+            imageWidth: 200,
+            imageHeight: 200,
+            showConfirmButton: false,
+            timer: 2500
+        })
         });
       });
     };
 
-    // Agregar productos al carrito
     const agregarAlCarrito = (productos, id) => {
       const producto = productos.find((producto) => producto.id === id);
       if (!carrito.some((prod) => prod.id === id)) {
@@ -48,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
       actualizarContadorCarrito();
     };
 
-    // Actualizar contador del carrito en el header
     const actualizarContadorCarrito = () => {
       const contadorCarrito = document.getElementById("cartQuantity");
       const cantidadTotal = carrito.reduce(
@@ -59,11 +67,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
-  // Lógica para carrito.html
   else if (document.body.classList.contains("carrito-page")) {
     mostrarCarrito();
 
-    // Mostrar productos en el carrito
     const mostrarCarrito = () => {
       const contenedorCarrito = document.getElementById("carrito-container");
       contenedorCarrito.innerHTML = "";

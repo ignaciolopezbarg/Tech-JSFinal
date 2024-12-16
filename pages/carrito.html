@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito de Compra</title>
-    <link rel="stylesheet" href="../css/index.css" />
+    
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body >
     <header class="encabezado">
@@ -16,20 +17,18 @@
 
       <a href="../index.html">
         <section class="encabezado__nombre">
-          
-          <p>TODOS EN BICICLETA</p>
+        <p>TODOS EN BICICLETA</p>
         </a>
       <a href="../index.html">
         <section class="encabezado__cart">
           <i class="material-icons">shopping_cart</i>
-        
         </section>
       </a>
       
     </header>
 
     <main class="carrito-page">
-      <h2>Carrito de Compras</h2>
+      <h1 class="carrito-page__encabezado">CARRITO</h1>
       <section id="carrito-container"></section>
       <div id="total-container">
         <span class="total-compra">Total: $ <span id="total-compra">0</span></span>
@@ -55,7 +54,7 @@
       </div>
     </footer>
    
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/carrito.js"></script>
   </body>
 </html>

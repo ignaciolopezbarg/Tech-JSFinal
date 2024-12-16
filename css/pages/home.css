@@ -225,7 +225,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 /* Estilos para el encabezado del carrito */
@@ -294,7 +294,7 @@
 
 .counter button {
   padding: 5px 10px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -357,7 +357,7 @@
   height: 30px; /* Altura del círculo */
   border-radius: 50%; /* Hace que el contador sea circular */
   background-color: rgb(247, 239, 239); /* Fondo rojo para el círculo */
-  color:black; /* Color del texto dentro del círculo */
+  color: black; /* Color del texto dentro del círculo */
   font-size: 16px; /* Tamaño del número */
   font-weight: bold; /* Opcional: hace el número más grueso */
   position: relative;
@@ -366,11 +366,36 @@
 #cartQuantity {
   font-size: 14px; /* Ajusta el tamaño del número si es necesario */
 }
-.total-compra{
-  display: flex ;
-  font-size: 2rem;
+.carrito-page__encabezado {
+  display: flex;
+  font-size: 3rem;
   font-weight: 800;
   justify-content: center;
-  border: solid rgb(201, 97, 121) 2px;
-  margin: 0 90px;
+}
+.total-compra {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+  justify-content: center;
+}
+.carrito-container__brand{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.carrito-container__description{
+  font-size: 1.5rem;
+}
+.carrito-container__precio{
+  font-size: 2rem;
+}
+#carrito-container{
+  border: #e01a70 solid 2px;
+  border-radius: 5px;
+ margin: 2rem;
+  padding: 3rem;
+  
+}
+
+.product-price{
+  font-size: 1.5rem;
 }
