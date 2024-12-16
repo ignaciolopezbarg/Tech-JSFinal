@@ -189,7 +189,7 @@
 }
 .recorridos__boton {
   border: 1px solid black;
-  width: 10rem;
+  width: 120px;
   height: 2.2rem;
 }
 
@@ -389,13 +389,38 @@
   font-size: 2rem;
 }
 #carrito-container{
-  border: #e01a70 solid 2px;
+  border: #090004 solid 2px;
   border-radius: 5px;
- margin: 2rem;
+  margin: 2rem;
   padding: 3rem;
   
 }
 
 .product-price{
   font-size: 1.5rem;
+}
+#total-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.checkout{
+  width: 100px;
+  height: 40px;
+  border: 1px rgb(44, 4, 4) solid;
+  background-color: #e2cbd5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.checkout:hover{
+  background-color: #b9dcbb;
+  transform: scale(1.2);
+
+}
+.mensaje-carrito {
+  color: red;
+  font-size: 18px;
+/*  este estilo no funciona */
 }

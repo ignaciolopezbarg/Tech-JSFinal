@@ -21,7 +21,7 @@ const mostrarRecorridos = (recorridos) => {
             <p class="recorridos__descripcion">Dificultad: ${recorrido.dificultad}</p>
             <span class="recorridos__precio">Costo total: $${recorrido.costo_total}</span>
             <p class="recorridos__fechas">Próximas salidas: ${recorrido.proximas_salidas}</p>
-            <button class="recorridos__boton">RESERVAR</button>
+            <button class="recorridos__boton">PROXIMAMENTE</button>
         `;
         
         

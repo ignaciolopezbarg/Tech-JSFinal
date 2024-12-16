@@ -110,7 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         actualizarTotalCompra();
       } else {
-        contenedorCarrito.innerHTML = "<p>No hay productos en el carrito</p>";
+        contenedorCarrito.innerHTML = '<span class="mensaje-carrito">No hay productos en el carrito</span>';
+
         actualizarTotalCompra();
       }
     };
