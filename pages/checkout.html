@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-</head>
-<body>
-    <h1>CHECKOUT</h1>
-</body>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+
+  <body class="form-body">
+    <div><h1 class="form-titulo">CHECKOUT</h1></div>
+    <form class="form-container">
+      <p class="form-group">
+        <label for="full_name" class="form-label">Nombre Completo:</label>
+        <input
+          type="text"
+          name="full_name"
+          class="form-input"
+          required
+          minlength="3"
+          maxlength="18"
+          placeholder="Ingrese su nombre"
+        />
+      </p>
+
+      <p class="form-group">
+        <label for="Pais" class="form-label">Pais:</label>
+        <input
+          type="text"
+          name="Pais"
+          class="form-input"
+          required
+          placeholder="Ingrese Pais"
+        />
+      </p>
+
+      <p class="form-group">
+        <label for="ciudad" class="form-label">Ciudad:</label>
+        <input
+          type="text"
+          name="ciudad"
+          class="form-input"
+          required
+          placeholder="Ingrese ciudad"
+        />
+      </p>
+
+      <p class="form-group">
+        <label for="Tarjeta Credito" class="form-label">Tarjeta Credito:</label>
+        <input
+          type="number"
+          name="Tarjeta Credito"
+          class="form-input"
+          required
+          minlength="16"
+          maxlength="16"
+          placeholder="Ingrese número de tarjeta crédito"
+        />
+      </p>
+
+      <p class="form-group">
+        <label for="Mes" class="form-label">Mes:</label>
+        <input
+          type="number"
+          name="Mes"
+          class="form-input"
+          required
+          minlength="1"
+          maxlength="2"
+          placeholder="Mes de vencimiento"
+        />
+      </p>
+
+      <p class="form-group">
+        <label for="Año" class="form-label">Año:</label>
+        <input
+          type="number"
+          name="Año"
+          class="form-input"
+          required
+          minlength="4"
+          maxlength="4"
+          placeholder="Año de vencimiento"
+        />
+      </p>
+
+      <div class="form-buttons">
+        <button type="submit" class="form-button finalizar">
+          Finalizar Compra
+        </button>
+        <a href="./carrito.html">
+          <button type="button" class="form-button volver">Volver</button>
+        </a>
+      </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/checkout.js"></script>
+  </body>
 </html>
