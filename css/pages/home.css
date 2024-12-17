@@ -424,3 +424,19 @@
   font-size: 18px;
 /*  este estilo no funciona */
 }
+#anuncio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  margin-left: 100px;
+  padding: 20px;
+  background-color: #e2cbd5;
+}
+#anuncio:hover{
+  background-color: #e4d8d8;
+}
+.anuncio{
+  display: flex;
+  justify-content: center;
+}
