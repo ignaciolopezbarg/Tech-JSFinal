@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <p><strong>Tarjeta de Crédito:</strong> **** **** **** ${tarjeta.slice(
               -4
             )}</p>
+            
             <p><strong>Vencimiento:</strong> ${mes}/${anio}</p>
           `,
         showConfirmButton: true,
